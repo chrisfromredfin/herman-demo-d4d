@@ -11,5 +11,8 @@
     "node-sass": "^4.9.0",
     "sassdoc": "^2.5.0",
     "sassdoc-theme-herman": "^3.0.0"
+  },
+  "scripts": {
+    "guide": "sassdoc sass/**/*.scss"
   }
 }
