@@ -51,6 +51,31 @@ $heading-font: (
 );
 @include herman-add('font', 'serif-font', $heading-font);
 
+// ***** RATIOS & SIZES *****/
+/// Ratios and sizes can be documented and displayed. 
+/// @group sizing
+
+// Define some variables for our ratios.
+$root: 16px;
+$xlarge: 3rem;
+
+/// @ratios vertical-rhythm
+/// @group sizing
+$vertical_rhythm: (
+  'line-height': 1.25,
+);
+@include herman-add('ratios', 'vertical-rhythm', $vertical-rhythm);
+
+/// @sizes text-sizes
+/// @group sizing
+$text-sizes: (
+  'h1': 2rem,
+  'h2': 1.5rem,
+  'readable-text': 1.125rem,
+  'root': 16px,
+);
+@include herman-add('sizes', 'text-sizes', $text-sizes);
+
 // ***** MIXINS ***** //
 // Below is a "free-floating" comment, but is tagged with the @group annotation
 // so that we can
