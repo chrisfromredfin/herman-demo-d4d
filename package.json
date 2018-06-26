@@ -7,6 +7,7 @@
   "license": "AFL-3.0",
   "private": false,
   "dependencies": {
+    "dart-sass": "^1.7.1",
     "node-sass": "^4.9.0",
     "sassdoc": "^2.5.0",
     "sassdoc-theme-herman": "^3.0.0"
