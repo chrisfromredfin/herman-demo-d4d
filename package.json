@@ -7,12 +7,16 @@
   "license": "AFL-3.0",
   "private": false,
   "dependencies": {
+    "browser-sync": "^2.24.5",
     "dart-sass": "^1.7.1",
     "node-sass": "^4.9.0",
+    "onchange": "^4.0.0",
     "sassdoc": "^2.5.0",
     "sassdoc-theme-herman": "^3.0.0"
   },
   "scripts": {
-    "guide": "sassdoc sass/**/*.scss"
+    "guide": "sassdoc sass/**/*.scss",
+    "watch": "onchange 'sass/**/*.scss' -- yarn build && yarn guide",
+    "bs": "browser-sync start --files=style.css"
   }
 }
