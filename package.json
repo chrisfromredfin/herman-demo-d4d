@@ -17,7 +17,7 @@
   "scripts": {
     "guide": "sassdoc sass/**/*.scss",
     "build:all": "yarn run build && yarn run guide",
-    "watch": "onchange 'sass/**/*.scss' -- yarn build:all",
+    "watch": "onchange -i 'sass/**/*.scss' -- yarn build:all",
     "build": "dart-sass sass/style.scss > style.css",
     "bs": "browser-sync start --files=style.css"
   }
