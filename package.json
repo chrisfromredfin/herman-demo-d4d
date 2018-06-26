@@ -1,0 +1,14 @@
+{
+  "name": "herman.demo",
+  "version": "1.0.0",
+  "description": "A Demo of Herman's capabilities.",
+  "main": "index.html",
+  "author": "Chris Wells",
+  "license": "AFL-3.0",
+  "private": false,
+  "dependencies": {
+    "node-sass": "^4.9.0",
+    "sassdoc": "^2.5.0",
+    "sassdoc-theme-herman": "^3.0.0"
+  }
+}
