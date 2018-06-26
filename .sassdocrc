@@ -2,3 +2,10 @@ dest: guide
 exclude:
   - node_modules
 theme: herman
+herman:
+  customCSS: 'style.css'
+  sass:
+    includepaths:
+      - 'sass'
+    includes:
+      - 'sass/setup'

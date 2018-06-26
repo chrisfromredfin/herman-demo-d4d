@@ -17,8 +17,12 @@
 ///
 /// @example scss -
 ///   .responsive-embed {
-///     @include embed-container(400px, 300px);
+///     @include embed-container(560px, 315px);
 ///   }
+/// @example html -
+///   <div class="responsive-embed">
+///     <iframe width="560" height="315" src="https://www.youtube.com/embed/jbpwXVVReM0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+///   </div>
 @mixin embed-container($width, $height) {
   $ratio: ($height / $width) * 100%;
   position: relative;
