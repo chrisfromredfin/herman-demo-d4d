@@ -9,7 +9,10 @@ herman:
       - 'sass'
     includes:
       - 'sass/setup'
+    jsonfile: 'style.css'
 groups:
   Utility:
     mixins: Mix-ins
     extends: Placeholders
+  Branding:
+    colors: Color Guidelines

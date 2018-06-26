@@ -1,3 +1,31 @@
+@import '../node_modules/sassdoc-theme-herman/scss/utilities';
+
+// ***** COLORS *****//
+/// @group colors
+/// @colors brand-colors
+$brand-colors: (
+  'yellow': #f3ae2f,
+  'orange': #ff5d3b,
+  'blue': #0097a9,
+  'green': #74ae55,
+  'purple': #bb5f82,
+  'maroon': #aa4957,
+  'olive': #c8be70,
+  'gray': #4d4d4f,
+);
+@include herman-add('colors', 'brand-colors', $brand-colors);
+
+/// @group colors
+/// @colors neutrals
+$neutrals: (
+  'black': #090909,
+  'dark-gray': #303030,
+  'medium-gray': #676767,
+  'light-gray': #dedede,
+  'white': #ffffff,
+);
+@include herman-add('colors', 'neutrals', $neutrals);
+
 // ***** MIXINS ***** //
 // Below is a "free-floating" comment, but is tagged with the @group annotation
 // so that we can
