@@ -1,0 +1,13 @@
+body {
+  // NOTE: This is just to work around a bug in Herman regarding rendering
+  // of components inside an iframe, @see:
+  // https://github.com/oddbird/sassdoc-theme-herman/issues/242
+  margin: 1em;
+}
+
+.fake-submit {
+  @extend %btn;
+  background-color: red;
+  border-color: darken(red, 20%);
+  color: white;
+}
