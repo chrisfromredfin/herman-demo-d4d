@@ -10,6 +10,8 @@ herman:
     includes:
       - 'sass/setup'
     jsonfile: 'style.css'
+  nunjucks:
+    templatepath: templates
 groups:
   Utility:
     mixins: Mix-ins
@@ -18,3 +20,8 @@ groups:
     colors: Color Guidelines
     type: Typography
     sizing: Ratios & Sizing
+  Components:
+    molecules: Molecules
+    organisms: Organisms
+  Assets: 
+    assets: Icons

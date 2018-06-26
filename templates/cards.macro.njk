@@ -1,0 +1,8 @@
+{% import 'card.macro.njk' as c %}
+{% macro cards(items) %}
+<div class="cards">
+  {% for item in items %}
+    {{ c.card(item) }}
+  {% endfor %}
+</div>
+{% endmacro %}

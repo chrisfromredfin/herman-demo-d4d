@@ -1,0 +1,11 @@
+{% macro card(item) %}
+<div class="card">
+  <img src="{{ item.src }}">
+  <div class="caption">
+    {{ item.caption }}
+  </div>
+  <div class="attribution">
+    {{ item.attribution }}
+  </div>
+</div>
+{% endmacro %}

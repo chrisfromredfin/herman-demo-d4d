@@ -4,10 +4,55 @@ body {
   // https://github.com/oddbird/sassdoc-theme-herman/issues/242
   margin: 1em;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .fake-submit {
   @extend %btn;
   background-color: red;
   border-color: darken(red, 20%);
   color: white;
+}
+
+/// Card: a photo panel with a name and an attribution.
+/// @group molecules
+/// @example njk -
+/// {% import 'card.macro.njk' as bill %}
+/// {{ bill.card({ 
+///  "src": "http://fillmurray.com/600/450", 
+///  "caption": "If I'm wrong nothing happens! We go to jail, peacfully, quietly. We'll enjoy it.", 
+///  "attribution": "Ghostbusters, 1984."}) }}
+.card {
+  width: 300px;
+  text-align: left;
+  border: 1px solid black;
+
+  .caption {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+
+  .attribution {
+    font-size: 0.875rem;
+    background-color: map-get($neutrals, 'light-gray');
+    color: map-get($neutrals, 'dark-gray');
+    padding: 0.5rem;
+    font-style: italic;
+  }
+}
+
+/// @group organisms
+/// @example njk -
+/// {% import 'cards.macro.njk' as o %}
+/// {{ o.cards([
+///             {"src": "http://fillmurray.com/600/450","caption": "Cats and dogs living together...", "attribution": "fillmurray.com"}, 
+///             {"src": "http://placecage.com/600/450", "caption": "I jump around more when I'm alone.", "attribution": "placecage.com"}, 
+///             {"src": "http://stevensegallery.com/600/450", "caption": "The secret is not to act, but to be.", attribution: "stevensegallery.com"}]) }}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
