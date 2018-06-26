@@ -16,7 +16,9 @@
   },
   "scripts": {
     "guide": "sassdoc sass/**/*.scss",
-    "watch": "onchange 'sass/**/*.scss' -- yarn build && yarn guide",
+    "build:all": "yarn run build && yarn run guide",
+    "watch": "onchange 'sass/**/*.scss' -- yarn build:all",
+    "build": "dart-sass sass/style.scss > style.css",
     "bs": "browser-sync start --files=style.css"
   }
 }
