@@ -26,6 +26,31 @@ $neutrals: (
 );
 @include herman-add('colors', 'neutrals', $neutrals);
 
+// ***** TYPOGRAPHY *****/
+/// We are trying our best to use all Google Fonts on this project, since the budget
+/// is already very tight.
+/// @group type
+
+/// @group type
+/// @font sans-font (normal, bold, italic)
+///   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+$sans-font: (
+  'name': 'Lato',
+  'source': 'https://fonts.google.com/specimen/Lato',
+  'stack': ('Helvetica Neue', 'Helvetica', 'Arial', sans-serif)
+);
+@include herman-add('font', 'sans-font', $sans-font);
+
+/// @group type
+/// @font serif-font (normal, bold)
+///   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+$heading-font: (
+  'name': 'Merriweather',
+  'source': 'https://fonts.google.com/specimen/Merriweather',
+  'stack': ('Times New Roman', serif)
+);
+@include herman-add('font', 'serif-font', $heading-font);
+
 // ***** MIXINS ***** //
 // Below is a "free-floating" comment, but is tagged with the @group annotation
 // so that we can

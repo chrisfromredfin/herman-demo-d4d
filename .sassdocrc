@@ -16,3 +16,4 @@ groups:
     extends: Placeholders
   Branding:
     colors: Color Guidelines
+    type: Typography
