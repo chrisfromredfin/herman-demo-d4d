@@ -76,6 +76,10 @@ $text-sizes: (
 );
 @include herman-add('sizes', 'text-sizes', $text-sizes);
 
+// ***** ICONS ***** //
+/// @group Assets
+/// @icons assets
+
 // ***** MIXINS ***** //
 // Below is a "free-floating" comment, but is tagged with the @group annotation
 // so that we can
